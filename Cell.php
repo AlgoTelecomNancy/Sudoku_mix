@@ -1,6 +1,6 @@
 <?php
 
-public Case {
+public Cell {
   private $possibleValues;
   private $groups;
   private $indice;
