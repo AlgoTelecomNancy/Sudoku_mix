@@ -26,8 +26,16 @@ public Case {
   public function getPossibleValues() {
     return $this->possibleValues;
   }
-  public function addPossibleValues($value) {
+  public function addPossibleValue($value) {
     $this->possibleValues[] = $value;
+  }
+
+  public function newValue($value) {
+    foreach($this->possibleValues as $id=>$value) {
+      unset($this->possibleValues[$id]);
+    }
+
+    $this->addPossibleValue($value);
   }
 
 }
