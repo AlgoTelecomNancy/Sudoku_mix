@@ -16,6 +16,10 @@ public Group {
     return $this->cells;
   }
 
+  public function getIndice() {
+    return $this->indice;
+  }
+
 }
 
  ?>

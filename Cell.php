@@ -38,6 +38,10 @@ public Cell {
     $this->addPossibleValue($value);
   }
 
+  public function getIndice() {
+    return $this->indice;
+  }
+
 }
 
  ?>
