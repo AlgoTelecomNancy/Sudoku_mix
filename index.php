@@ -38,6 +38,6 @@ function searchSolution($groups,$cells,$cell_mofified_id,$cell_newvalue){
 	
 }
 
-searchSolution($Groups,$Cells,-1,0);
+searchSolution($groups,$cells,-1,0);
 
 ?>

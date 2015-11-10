@@ -1,6 +1,6 @@
 <?php
 
-public Group {
+class Group {
   private $cells;
   private $indice;
 

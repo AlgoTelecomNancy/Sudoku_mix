@@ -1,6 +1,6 @@
 <?php
 
-public Cell {
+class Cell {
   private $possibleValues;
   private $groups;
   private $indice;
