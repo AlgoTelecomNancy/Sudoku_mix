@@ -20,7 +20,7 @@ class Cell {
   public function removePossibleValue($value) {
     foreach($this->possibleValues as $id=>$val) {
       if($val == $value)
-        unset($this->possibleValues($id));
+        unset($this->possibleValues[$id]);
     }
   }
   public function getPossibleValues() {
@@ -31,11 +31,8 @@ class Cell {
   }
 
   public function newValue($value) {
-    foreach($this->possibleValues as $id=>$value) {
-      unset($this->possibleValues[$id]);
-    }
 
-    $this->addPossibleValue($value);
+    $this->possibleValues = Array($value);
   }
 
   public function getIndice() {
